@@ -77,7 +77,7 @@ ul{
 .section-title{
     flex: 0 0 100%;
     max-width: 100%;
-    background-color: red;
+    /* background-color: red; */
 
 }
 
@@ -85,7 +85,35 @@ ul{
     font-size: 40px;
     color: var(--text-black-900);
     font-weight: 700;
+    position: relative;
 }
+
+.section-title h2::before{
+
+    contain: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+
+}
+
+.section-title h2::after{
+    contain: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 8px;
+
+
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
