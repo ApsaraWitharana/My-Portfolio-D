@@ -52,7 +52,7 @@ ul{
 }
 
 .hidden{
-    display: none;
+    display: none !important;
 }
 .home section{
     padding: 270px;
@@ -69,6 +69,23 @@ ul{
    /* background: red; */
 }
 
+.section .Container{
+    padding-top: 60px;
+    padding-bottom: 70px;
+}
+
+.section-title{
+    flex: 0 0 100%;
+    max-width: 100%;
+    background-color: red;
+
+}
+
+.section-title h2{
+    font-size: 40px;
+    color: var(--text-black-900);
+    font-weight: 700;
+}
 .row{
     display: flex;
     flex-wrap: wrap;
