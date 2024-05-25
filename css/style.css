@@ -42,13 +42,17 @@ ul{
     min-height: 100vh;
     display: block;
     position: 0 30px;
-    left: 270px;
-    top: 0;
+    /* left: 270px; */
+    /* top: 0;
     right: 0;
-    z-index: 0;
+    z-index: 0; */
     opacity: 1;
 
 
+}
+
+.home section{
+    padding: 270px;
 }
 .padd-15{
     padding-left: 15px;
@@ -297,4 +301,10 @@ h3.my-profession{
     width: 80px;
     left: -20px;
     top: -40px;
+}
+
+.home .home-img img{
+    margin: auto;
+    border-radius: 5px;
+    height: 400px;
 }
