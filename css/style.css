@@ -357,3 +357,22 @@ h3.my-profession{
     border-radius: 5px;
     height: 400px;
 }
+
+/* About */
+
+.about .about-content{
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background-color: red; */
+
+}
+
+.about .about-content .about-text{
+    flex: 0 0 100%;
+    max-width: 100%;
+
+}
+
+
+
+
