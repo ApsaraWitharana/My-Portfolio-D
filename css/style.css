@@ -373,6 +373,22 @@ h3.my-profession{
 
 }
 
+.about .about-content .about-text h3{
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    /* color: var(--); */
 
+}
 
+.about .about-content .about-text h3 span{
 
+    color: var(--skin-color);
+
+}
+
+.about .about-content .about-text p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+}
