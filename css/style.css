@@ -392,3 +392,36 @@ h3.my-profession{
     line-height: 25px;
     color: var(--text-black-700);
 }
+
+
+  .about .about-content .personal-info{
+
+    flex: 0 0 60%;
+    max-width: 60%;
+    /* background-color: red; */
+    margin-top: 40px;
+ }
+
+
+
+.about .about-content .personal-info .info-item{
+
+    flex: 0 0 50%;
+    max-width: 50%;
+    /* background-color: red; */
+
+}
+
+.about .about-content .personal-info .info-item p{
+    
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 16px;
+
+}
+.about .about-content .skills{
+    flex: 0 0 40%;
+    max-width: 40%;
+    /* background-color: green; */
+    margin-top: 40px;
+}
