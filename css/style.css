@@ -753,5 +753,21 @@ h3.my-profession{
 
      color: var(--text-black-700);
      text-align: center;
-     
+     font-size: 15px;
+     margin-bottom: 60px;
  }
+
+.contact .contact-info-item{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+}
+
+.contact .contact-info-item .icon{
+    display: inline-block;
+}
+
+.contact .contact-info-item .icon .fa{
+    font-size: 25px;
+    color: var(--skin-color);
+}
