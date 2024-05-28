@@ -652,3 +652,8 @@ h3.my-profession{
     font-size: 25px;
     color: #ffffff;
 }
+
+.service .service-item .service-item-inner h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
