@@ -426,7 +426,7 @@ h3.my-profession{
 
     font-weight: 400;
     color: var(--text-black-700);
-    
+
 }
 .about .about-content .skills{
     flex: 0 0 40%;
@@ -434,3 +434,4 @@ h3.my-profession{
     /* background-color: green; */
     margin-top: 40px;
 }
+
