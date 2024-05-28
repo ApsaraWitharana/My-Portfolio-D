@@ -140,6 +140,10 @@ ul{
 .btn:hover{
     transform: scale(1.05);
 }
+
+.shadow-dark{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
 /* aside */
 .aside{
     width: 270px;
@@ -525,4 +529,10 @@ h3.my-profession{
 .about .about-content .timeline{
     background-color: var(--bg-black-100);
     padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+
+
 }
