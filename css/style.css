@@ -430,6 +430,15 @@ h3.my-profession{
     display: inline-block;
 
 }
+
+.about .about-content .personal-info .buttons{
+    margin-top: 30px;
+}
+
+.about .about-content .personal-info .buttons .btn{
+    margin-right: 15px;
+    margin-top: 10px;
+}
 .about .about-content .skills{
     flex: 0 0 40%;
     max-width: 40%;
