@@ -92,7 +92,8 @@ ul{
 
 .section-title h2::before{
 
-    contain: '';
+    content: '';
+    /* contain: ''; */
     height: 4px;
     width: 50px;
     background-color: var(--skin-color);
@@ -104,7 +105,8 @@ ul{
 }
 
 .section-title h2::after{
-    contain: '';
+    content: '';
+    /* contain: ''; */
     height: 4px;
     width: 25px;
     background-color: var(--skin-color);
