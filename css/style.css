@@ -8,6 +8,7 @@
     --bg-black-50: #e8dfec;
     --text-black-900:#302e4d;
     --text-black-700: #302e4d;
+    --skin-color: #ec1839;
 
 
 }
@@ -335,6 +336,7 @@ h3.my-profession{
     position: absolute;
     border-bottom:10px solid var(--skin-color) ;
     border-right: 10px solid var(--skin-color);
+    /* background-color: var(--skin-color); */
     height: 80px;
     width: 80px;
     right: 20px;
@@ -467,5 +469,20 @@ h3.my-profession{
     height: 7px;
     border-radius: 4px;
     width: 100%;
+    position: relative;
+}
+
+.about .about-content .skills .skill-item{
+    margin-bottom: 30px;
+
+}
+
+.about .about-content .skills .skill-item .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
 }
 
