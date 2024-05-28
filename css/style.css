@@ -824,3 +824,17 @@ h3.my-profession{
     transition: all 0.3s ease;
 }
 
+.contact .contact-form .form-item .form-control:focus{
+    box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+
+.contact .contact-form .form-item textarea.form-control{
+    height: 140px;
+}
+
+.contact .contact-form .btn{
+    height: 50px;
+    padding: 0 50px;
+    
+}
+
