@@ -496,3 +496,15 @@ h3.my-profession{
     line-height: 40px;
 
 }
+
+.about .about-content .education,
+.about .about-content .experience{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+    background-color: red;
+}
+
+.about .about-content .experience{
+    background-color: rosybrown;
+}
