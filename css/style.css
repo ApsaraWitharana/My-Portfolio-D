@@ -788,3 +788,39 @@ h3.my-profession{
     color: var(--text-black-700);
     font-weight: 400;
 }
+
+.contact .contact-form{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.contact .contact-form .col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+    /* background: red; */
+}
+
+.contact .contact-form .col-12{
+
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* background: red; */
+}
+
+.contact .contact-form .form-item{
+    margin-bottom: 30px;
+
+}
+
+.contact .contact-form .form-item .form-control{
+    width: 100%;
+    height: 50%;
+    border-radius: 25px;
+    background: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text-black-700);
+    transition: all 0.3s ease;
+}
+
