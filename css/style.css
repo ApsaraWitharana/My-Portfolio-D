@@ -426,6 +426,8 @@ h3.my-profession{
 
     font-weight: 400;
     color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
 
 }
 .about .about-content .skills{
@@ -434,4 +436,6 @@ h3.my-profession{
     /* background-color: green; */
     margin-top: 40px;
 }
+
+
 
