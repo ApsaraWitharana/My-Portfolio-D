@@ -711,12 +711,31 @@ h3.my-profession{
     display: block;
 }
 
-.check{
+#repo{
     border-radius: 12px;
-    border: 2px solid black;
+    border: 2px solid #ddd;
     text-align: center;
-    /* width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--bg-black-900);
+    width: 100%;
     height: 50%;
-    align-items: center; */
+    
+}
+
+#repo:hover {
+    background-color: var(--skin-color);
+    
 
 }
+
+ /* #repo {
+     border: 1px solid #ddd;
+     padding: 10px;
+     margin: 10px 0;
+     border-radius: 5px;
+ }*/
+
+  #repo p {
+     margin-top: 0;
+ } 
