@@ -674,7 +674,9 @@ h3.my-profession{
 }
 
 /* Portfolio */
-
+.Portfolio .Container{
+    padding-bottom: 40px;
+}
 .Portfolio .Portfolio-heading{
 
     flex: 0 0 100%;
@@ -685,4 +687,25 @@ h3.my-profession{
 .Portfolio .Portfolio-heading h2{
     color: var(--text-black-900);
     font-weight: 500;
+}
+
+.Portfolio .Portfolio-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+
+}
+
+.Portfolio .Portfolio-item-inner{
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.Portfolio .Portfolio-item-inner .Portfolio-img{
+    width: 100%;
+        border-radius: 20px 20px 10px 10px;
+        height: 50%;
+        display: block;
 }
