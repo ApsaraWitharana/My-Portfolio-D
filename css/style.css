@@ -739,4 +739,19 @@ h3.my-profession{
      margin-top: 0;
  } 
 
- 
+ /* contact */
+
+ .contact-title{
+
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+ }
+
+ .contact-sub-title {
+
+     color: var(--text-black-700);
+     text-align: center;
+     
+ }
