@@ -723,7 +723,7 @@ h3.my-profession{
     color: var(--text-black-700);
     line-height: 25px;
 }
- .Portfolio-item .Portfolio-item-inner .Portfolio-img:hover{
+ .Portfolio-item .Portfolio-item-inner :focus{
 
     background-color:var(--bg-black-50);
     cursor: pointer;
