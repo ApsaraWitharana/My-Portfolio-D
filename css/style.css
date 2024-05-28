@@ -630,6 +630,25 @@ h3.my-profession{
     width: 60px;
     border-radius: 50%;
     display: block;
+    /* background-color: red; */
     margin: 0 auto 30px;
     align-items: center;
+    transition: all 0.3s ease;
+}
+
+.service .service-item .service-item-inner .icon .fa{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+    transition: all 0.3s ease;
+}
+
+.service .service-item .service-item-inner:hover .icon{
+   background: var(--skin-color);
+}
+
+.service .service-item .service-item-inner:hover .icon .fa{
+
+    font-size: 25px;
+    color: #ffffff;
 }
