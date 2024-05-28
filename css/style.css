@@ -710,6 +710,37 @@ h3.my-profession{
     height:50%;
     display: block;
 }
+.Portfolio-item .Portfolio-item-inner  h4{
+    font-size: 18px;
+        margin-bottom: 15px;
+        color: var(--text-black-900);
+        font-weight: 700;
+        text-transform: capitalize;
+}
+
+.Portfolio-item .Portfolio-item-inner p{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
+}
+ .Portfolio-item .Portfolio-item-inner .Portfolio-img:hover{
+
+    background-color:var(--bg-black-50);
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(58, 56, 88, 0.15);
+ }
+
+ .Portfolio-item .Portfolio-item-inner .Portfolio-img{
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.3S ease;
+
+    
+ }
+
 
 #repo{
     border-radius: 12px;
@@ -728,12 +759,6 @@ h3.my-profession{
     
 }
 
- /* #repo {
-     border: 1px solid #ddd;
-     padding: 10px;
-     margin: 10px 0;
-     border-radius: 5px;
- }*/
 
   #repo p {
      margin-top: 0;
@@ -835,6 +860,8 @@ h3.my-profession{
 .contact .contact-form .btn{
     height: 50px;
     padding: 0 50px;
-    
+
 }
 
+
+/* responsive */
