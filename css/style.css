@@ -568,3 +568,33 @@ h3.my-profession{
     border-radius: 50%;
     background-color: var(--skin-color);
 }
+
+.about .about-content .timeline .timeline-date{
+
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+
+}
+
+.about .about-content .timeline .timeline-date .fa{
+    margin-right: 5px;
+
+}
+
+.about .about-content .timeline .timeline-title{
+
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom:15px;
+    text-transform: capitalize;
+    color: var(--text-black-900);
+}
+
+.about .about-content .timeline .timeline-text{
+    line-height: 25px;
+    font-size: 16px;
+    text-align: justify;
+    color: var(--text-black-700);
+}
