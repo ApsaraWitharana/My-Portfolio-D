@@ -1,0 +1,15 @@
+
+
+.style-switcher{
+
+    position: fixed;
+    right: 0;
+    padding: 15px;
+    top: 60px;
+    width: 200px;
+    border: 1px solid var(--bg-black-50);
+    background: var(--bg-black-100);
+    z-index: 101;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
