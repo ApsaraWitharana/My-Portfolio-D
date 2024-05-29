@@ -58,6 +58,9 @@ ul{
 .home section{
     padding: 270px;
 }
+.main-content{
+    padding: 270px;
+}
 .padd-15{
     padding-left: 15px;
     padding-right: 15px;
@@ -865,3 +868,21 @@ h3.my-profession{
 
 
 /* responsive */
+
+@media (max-width:1199px){
+
+    .aside{
+
+        left:-270px;
+    }
+
+    .main-content{
+
+        padding-left: 0;
+    }
+
+    .about .about-content .personal-info .info-item p span{
+        display: block;
+        margin-left: 0;
+    }
+}
