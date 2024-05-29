@@ -12,7 +12,17 @@
 
 
 }
+/* set color dark window */
 
+body.dark{
+
+        --bg-black-900: #151515;
+        --bg-black-100: #222222;
+        --bg-black-50: #393939;
+        --text-black-900: #ffffff;
+        --text-black-700: #e9e9e9;
+        --skin-color: #ec1839;
+}
 body{
    
     line-height: 1.5;
