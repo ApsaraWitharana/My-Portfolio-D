@@ -10,8 +10,8 @@
     --text-black-700: #302e4d;
     --skin-color: #ec1839;
 
-
 }
+
 /* set color dark window */
 
 body.dark{
@@ -30,6 +30,7 @@ body{
     font-family: 'Poppins' sans-serif;
 
 }
+
 *
 {
     margin: 0;
