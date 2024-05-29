@@ -1,4 +1,14 @@
 
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #302e4d;
+    --skin-color: #ec1839;
+
+
+}
 
 .style-switcher{
 
@@ -12,4 +22,21 @@
     z-index: 101;
     border-radius: 5px;
     transition: all 0.3s ease;
+}
+
+.style-switcher .s-icon{
+
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    background: var(--bg-black-100);
+    color: var(--text-black-900);
+    right: 100%;
+    border: 1px solid var(--bg-black-50);
+    margin-right: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 50%;
 }
