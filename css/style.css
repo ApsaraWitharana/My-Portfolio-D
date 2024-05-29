@@ -753,6 +753,12 @@ h3.my-profession{
     box-shadow: 0 0 20px rgba(58, 56, 88, 0.15);
  }
 
+ .Portfolio .Portfolio-item-inner:hover{
+    /* border: var(--skin-color); */
+    border: 3px solid var(--skin-color);
+    box-shadow: 0 0 20px rgba(58, 56, 88, 0.15);
+ }
+
  .Portfolio-item .Portfolio-item-inner .Portfolio-img{
     background-color: var(--bg-black-100);
     border: 1px solid var(--bg-black-50);
