@@ -920,6 +920,7 @@ h3.my-profession{
 
 @media (max-width:767px){
 
+    .contact .contact-form .col-6,
     .contact .contact-info-item,
     .Portfolio .Portfolio-item,
     .service .service-item,
@@ -932,4 +933,8 @@ h3.my-profession{
         max-width: 100%;
 
     }
+
+        #repo {
+            max-width: auto;
+        }
 }
