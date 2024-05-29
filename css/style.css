@@ -296,6 +296,12 @@ ul{
 
 }
 
+.aside .nav li a:hover {
+    color: var(--skin-color);
+    font-size: 18px;
+
+}
+
 .aside .nav li a i{
     margin-right: 15px;
 }
