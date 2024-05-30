@@ -1,8 +1,8 @@
 
 // ===========================toggle style switcher================
 
-const styleSwitcherToggler = document.querySelector(".style-switcher-toggler");
-styleSwitcherToggler.addEventListener("click", () =>{
+const styleSwitcherToggle = document.querySelector(".style-switcher-toggler");
+styleSwitcherToggle.addEventListener("click", () =>{
     document.querySelector(".style-switcher").classList.toggle("open");
 
 })
