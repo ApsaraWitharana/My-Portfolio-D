@@ -50,17 +50,25 @@ ul{
 }
 
 .section{
+
     background: var(--bg-black-900);
     min-height: 100vh;
     display: block;
     position: 0 30px;
-    /* left: 270px; */
-    /* top: 0;
+    left: 270px; 
+    top: 0;
     right: 0;
-    z-index: 0; */
+    bottom: 0;
+    z-index: 0; 
     opacity: 1;
+    overflow-y: auto;
+    overflow-x: hidden;
 
+}
 
+.section .active{
+    z-index: 2;
+    opacity: 1;
 }
 
 .hidden{
