@@ -63,7 +63,7 @@ ul{
     opacity: 1;
     overflow-y: auto;
     overflow-x: hidden;
-
+    transition: all 0.3s ease;
 }
 
 .section .active{
@@ -197,6 +197,7 @@ ul{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
 
 }
 
@@ -258,6 +259,7 @@ ul{
     display: none;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
 
 
 }
@@ -270,6 +272,9 @@ ul{
     position: relative;
 }
 
+.aside .nav-toggler.open span{
+    background-color: transparent;
+}
 .aside .nav-toggler span::before{
     content: '';
     height: 2px;
@@ -280,7 +285,10 @@ ul{
     left: 0;
 
 }
-
+.aside .nav-toggler.open span::before{
+    transform: rotate(45deg);
+    top: 0;
+}
 .aside .nav-toggler span::after {
     
     content: '';
@@ -292,7 +300,10 @@ ul{
     left: 0;
 
 }
-
+.aside .nav-toggler.open span::after {
+    transform: rotate(-45deg);
+    top: 0;
+}
 .aside .nav{
     margin-top: 50px;
 
@@ -487,7 +498,7 @@ h3.my-profession{
 }
 
 .about .about-content .personal-info .buttons .btn{
-    margin-right: 15px;
+    /* margin-right: 15px; */
     margin-top: 10px;
 }
 .about .about-content .skills{
@@ -918,14 +929,37 @@ h3.my-profession{
 
 @media (max-width:1199px){
 
+    .section .Container{
+        padding-top: 70px;
+    }
     .aside{
 
         left:-270px;
     }
 
-    .main-content{
+    /* .main-content{
 
         padding-left: 0;
+    } */
+
+    .aside.open{
+         left:0 ;
+    }
+    .aside .nav-toggler{
+        display: flex;
+        left: 30px;
+    }
+
+    .aside .nav-toggler.open{
+        left: 300px;
+    }
+
+    .section{
+        left: 0;
+    }
+
+    .section.open{
+        left: 270px;
     }
 
         #repo {
@@ -941,7 +975,10 @@ h3.my-profession{
 
 @media (max-width:991px){
 
-
+    .section .Container {
+        padding-top: 50px;
+        margin: 0 10px 10px 10px;
+    }
     
     .contact .contact-info-item,
     .Portfolio .Portfolio-item,
@@ -967,6 +1004,10 @@ h3.my-profession{
 
 @media (max-width:767px){
 
+    .section .Container {
+            padding-top: 30px;
+            margin: 0 10px 10px 10px;
+        }
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .Portfolio .Portfolio-item,
@@ -984,4 +1025,56 @@ h3.my-profession{
         #repo {
             max-width: auto;
         }
+}
+
+@media (max-width:543px) {
+
+    .section .Container {
+            padding-top: 40px;
+            margin: 0 10px 10px 10px;
+        }
+
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .Portfolio .Portfolio-item,
+    .service .service-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info {
+
+        flex: 0 0 100%;
+        max-width: 100%;
+
+    }
+
+    #repo {
+        max-width: auto;
+    }
+}
+
+@media (max-width:319px) {
+
+
+    .section .Container {
+            padding-top: 20px;
+            margin: 0 10px 10px 10px;
+        }
+    .contact .contact-form .col-6,
+    .contact .contact-info-item,
+    .Portfolio .Portfolio-item,
+    .service .service-item,
+    .about .about-content .experience,
+    .about .about-content .education,
+    .about .about-content .skills,
+    .about .about-content .personal-info {
+
+        flex: 0 0 100%;
+        max-width: 100%;
+
+    }
+
+    #repo {
+        max-width: auto;
+    }
 }
