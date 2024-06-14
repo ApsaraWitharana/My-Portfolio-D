@@ -924,7 +924,9 @@ h3.my-profession{
 
 }
 
-
+#alertButton{
+    cursor: pointer;
+}
 /* responsive */
 
 @media (max-width:1199px){

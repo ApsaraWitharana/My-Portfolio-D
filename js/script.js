@@ -93,3 +93,51 @@ const nav = document.querySelector(".nav"),
           allSection[i].classList.toggle("open");
         }
      }
+
+    //  ======================contact set massage=================
+
+     document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Get form values
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const subject = document.getElementById('subject').value;
+    const message = document.getElementById('message').value;
+
+    // Validate form values if needed
+    if (!name || !email || !subject || !message) {
+        alert('Please fill in all fields.');
+        return;
+    }
+
+    // Create a data object to send
+    const formData = {
+        name: name,
+        email: email,
+        subject: subject,
+        message: message
+    };
+
+    // Send the form data using Fetch API
+    fetch('/send-message', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert('Message sent successfully!');
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('There was an error sending your message.');
+    });
+});
+
+document.getElementById('alertButton').addEventListener('click', function() {
+    alert('Massage send successfully!');
+});
+
