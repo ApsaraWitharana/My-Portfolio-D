@@ -180,6 +180,12 @@ ul{
     transform: scale(1.05);
 }
 
+.btn:hover .stars{
+    display: block;
+    filter: drop-shadow(0 0 10px #ffdeff);
+
+}
+
 .shadow-dark{
     box-shadow: 0 0 20px rgba(48,46,77,0.15);
 }
@@ -420,6 +426,11 @@ h3.my-profession{
     height: 400px;
 }
 
+/* .btn.hover.stars {
+    display: block;
+    filter: drop-shadow(0 0 10px #ffdeff);
+
+} */
 /* About */
 
 .about .about-content{
@@ -1079,4 +1090,79 @@ h3.my-profession{
     #repo {
         max-width: auto;
     }
+}
+
+/* //.skills// */
+
+.skills-section {
+    padding: 50px 0;
+    background: var(--bg-black-900);
+    text-align: center;
+}
+
+.skills-section h2 {
+    color: var(--text-black-700);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    /* color: #f2efef; */
+}
+
+.skills-slider {
+    display: flex;
+    overflow-x: auto;
+    /* Allows horizontal scrolling */
+    scroll-snap-type: x mandatory;
+    /* Smooth snap scrolling */
+    gap: 20px;
+    /* Space between slides */
+    padding: 10px;
+}
+
+.skill-slide {
+    flex: 0 0 auto;
+    /* Ensure each slide keeps its size */
+    width: 200px;
+    /* Set a fixed width for each slide */
+    margin: 10px;
+    padding: 20px;
+    color: white;
+    background: var(--bg-black-100);
+    border-radius: 50%;
+    /* Makes the slide circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    scroll-snap-align: start;
+    /* Align slides to the start */
+    text-align: center;
+}
+
+.skill-slide img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    /* Makes the image circular */
+}
+
+.skill-slide h3 {
+    font-size: 1.2rem;
+    /* color: #f2efef; */
+    color: var(--text-black-700);
+}
+
+.skill-slide:hover {
+    transform: translateY(-10px);
+}
+
+/* Optional: Hide scrollbar */
+.skills-slider::-webkit-scrollbar {
+    display: none;
+}
+
+.skills-slider {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
