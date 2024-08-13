@@ -7,6 +7,16 @@ var typed = new Typed(".typing" ,{
     BackSpeed:60,
     loop:true
 })
+//=============project part card=====================
+document.addEventListener('DOMContentLoaded', () => {
+    const portfolioItems = document.querySelectorAll('.portfolio-item-inner');
+
+    portfolioItems.forEach(item => {
+        item.addEventListener('click', () => {
+            item.classList.toggle('flipped');
+        });
+    });
+});
 
 // ====================================Aside========================
 
@@ -93,10 +103,14 @@ const nav = document.querySelector(".nav"),
           allSection[i].classList.toggle("open");
         }
      }
+//===set massage======//
+document.getElementById("alertButton").addEventListener("click", function() {
+    alert("Message sent successfully!");
+});
 
     //  ======================contact set massage=================
 
-     document.getElementById('contact-form').addEventListener('submit', function(event) {
+     document.getElementById('contact-form').addEventListener('button', function(event) {
     event.preventDefault(); // Prevent the default form submission behavior
 
     // Get form values
