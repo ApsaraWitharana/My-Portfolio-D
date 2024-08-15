@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Poppins:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <!-- <style>
+     <style> 
         body {
             background-color: #131313;
             margin-bottom: 150px;
@@ -147,6 +147,106 @@
             transition-property: left;
         }
 
+        
+        /* animation */
+
+
+        body>main>section>div {
+            background-color: #2f2d2d;
+            border: 5px solid hsla(0, 0%, 49%, 0.5);
+            border-radius: 10px;
+            position: relative;
+            overflow-x: hidden;
+            animation: fadeIn 1s ease-out; /* Fade-in animation */
+        }
+
+        /* Fade-in Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        body>main>section>div>img, 
+        body>main>section>div>video {
+            width: 100%;
+            border-radius: 10px 10px 0 0;
+            position: relative;
+            transition: transform 0.5s ease; /* Smooth zoom-in effect */
+        }
+
+        body>main>section>div:hover>img, 
+        body>main>section>div:hover>video {
+            transform: scale(1.05);
+        }
+
+        body>main>section>div>a>button {
+            background-color: #eb4a4c;
+            width: max-content;
+            height: 30px;
+            border-radius: 10px;
+            font-size: 12px;
+            color: white;
+            padding-left: 20px;
+            padding-right: 20px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            border: none;
+            left: -200%;
+            right: 0;
+            cursor: pointer; /* Change cursor on hover */
+            transition: left 0.5s ease; /* Smooth transition */
+        }
+
+        body>main>section>div>a>button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        body>main>section>div>h4 {
+            color: white;
+            position: relative;
+            top: 10px;
+            margin-bottom: 40px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body>main>section>div>div {
+            background-color: black;
+            opacity: 70%;
+            height: 100%;
+            width: 0px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            right: 0;
+            transition-duration: 0.5s;
+            transition-property: width;
+        }
+
+        body>main>section>div:hover div {
+            width: 100%;
+            transition-duration: 0.5s;
+            transition-property: width;
+        }
+
+        body>main>section>div:hover button {
+            left: 0;
+            transition-duration: 0.5s;
+            transition-property: left;
+        }
+
+        /* Responsive Design */
         @media all and (max-width:320px) {
             body>main>section {
                 grid-template-columns: 1fr;
@@ -190,205 +290,6 @@
                 font-size: 3vw;
             }
         }
-
-        /* animation */
-
-        
-    </style> -->
-
-    <style>
-        /* General Styles */
-body {
-    background-color: #131313;
-    margin-bottom: 150px;
-}
-
-body>header {
-    background-color: #131313;
-    height: 50px;
-    top: 0;
-    position: fixed;
-    width: 100%;
-    z-index: 100;
-}
-
-body>header>div {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    width: max-content;
-}
-
-body>header>div>h2 {
-    display: inline-block;
-    color: #858585;
-    font-weight: 100;
-    font-size: 1vw;
-    font-family: 'Poppins', sans-serif;
-}
-
-body>main {
-    height: 100%;
-}
-
-body>main>section {
-    position: relative;
-    top: 100px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(7, 1fr);
-    width: 80%;
-    column-gap: 50px;
-    row-gap: 60px;
-    text-wrap: wrap;
-}
-
-body>main>section>div {
-    background-color: #2f2d2d;
-    border: 5px solid hsla(0, 0%, 49%, 0.5);
-    border-radius: 10px;
-    position: relative;
-    overflow-x: hidden;
-    animation: fadeIn 1s ease-out; /* Fade-in animation */
-}
-
-/* Fade-in Animation */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1);
-    }
-}
-
-body>main>section>div>img, 
-body>main>section>div>video {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-    position: relative;
-    transition: transform 0.5s ease; /* Smooth zoom-in effect */
-}
-
-body>main>section>div:hover>img, 
-body>main>section>div:hover>video {
-    transform: scale(1.05);
-}
-
-body>main>section>div>a>button {
-    background-color: #eb4a4c;
-    width: max-content;
-    height: 30px;
-    border-radius: 10px;
-    font-size: 12px;
-    color: white;
-    padding-left: 20px;
-    padding-right: 20px;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    border: none;
-    left: -200%;
-    right: 0;
-    cursor: pointer; /* Change cursor on hover */
-    transition: left 0.5s ease; /* Smooth transition */
-}
-
-body>main>section>div>a>button:hover {
-    background-color: white;
-    color: black;
-}
-
-body>main>section>div>h4 {
-    color: white;
-    position: relative;
-    top: 10px;
-    margin-bottom: 40px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-}
-
-body>main>section>div>div {
-    background-color: black;
-    opacity: 70%;
-    height: 100%;
-    width: 0px;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    transition-duration: 0.5s;
-    transition-property: width;
-}
-
-body>main>section>div:hover div {
-    width: 100%;
-    transition-duration: 0.5s;
-    transition-property: width;
-}
-
-body>main>section>div:hover button {
-    left: 0;
-    transition-duration: 0.5s;
-    transition-property: left;
-}
-
-/* Responsive Design */
-@media all and (max-width:320px) {
-    body>main>section {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(20, 1fr);
-    }
-
-    body>header>div>h2 {
-        font-size: 4vw;
-    }
-}
-
-@media all and (min-width:320px) and (max-width:375px) {
-    body>main>section {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(20, 1fr);
-    }
-
-    body>header>div>h2 {
-        font-size: 3vw;
-    }
-}
-
-@media all and (min-width:375px) and (max-width:425px) {
-    body>main>section {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(20, 1fr);
-    }
-
-    body>header>div>h2 {
-        font-size: 3vw;
-    }
-}
-
-@media all and (min-width:425px) and (max-width:768px) {
-    body>main>section {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(10, 1fr);
-    }
-
-    body>header>div>h2 {
-        font-size: 3vw;
-    }
-}
 
     </style>
 </head>
