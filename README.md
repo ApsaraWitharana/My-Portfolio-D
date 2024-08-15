@@ -29,12 +29,18 @@ You can explore various sections of the portfolio, such as:
 
 🎗️𝗧𝗲𝗰𝗵𝗻𝗼𝗹𝗼𝗴𝘆 𝘀𝘁𝗮𝗰𝗸 ☑️HTML ☑️CSS ☑️JS
 
-### White Color Theam
-
-![Screenshot 2024-06-03 130928](https://github.com/ApsaraWitharana/My-Portfolio-D/assets/139870615/c4160ef7-5382-4fb9-a72f-bdce0a79a0ec)
-
 ### Black Color Theam
 
-![Screenshot 2024-06-03 130946](https://github.com/ApsaraWitharana/My-Portfolio-D/assets/139870615/3bfec5a7-b134-4dbf-a782-36954569b3fd)
+![WhatsApp Image 2024-08-13 at 22 17 58_4e150df1](https://github.com/user-attachments/assets/4032a6f6-a2e4-4648-b6eb-eacd0b9ff0d8)
+
+### White Color Theam
+
+![WhatsApp Image 2024-08-13 at 22 20 14_fa99acee](https://github.com/user-attachments/assets/703f9686-b962-4825-bd2d-c222b5006477)
+
+### My Assignment
+
+![WhatsApp Image 2024-08-13 at 22 21 10_87c050ea](https://github.com/user-attachments/assets/6c3a789e-fa8b-47a5-b41d-232f31fd60ac)
+
+
 
 
