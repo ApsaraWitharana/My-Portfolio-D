@@ -56,3 +56,22 @@ window.addEventListener("load", () => {
         dayNight.querySelector("i").classList.add("fa-moon");
     }
 })
+
+//================image slider js ============
+let currentIndex = 0;
+const images = document.querySelectorAll('.slider-image');
+const totalImages = images.length;
+
+function showNextImage() {
+    // Remove active class from the current image
+    images[currentIndex].classList.remove('active');
+    
+    // Update index
+    currentIndex = (currentIndex + 1) % totalImages;
+    
+    // Add active class to the next image
+    images[currentIndex].classList.add('active');
+}
+
+// Start the image slider with an interval of 3 seconds
+setInterval(showNextImage, 3000);
